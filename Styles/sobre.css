@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.header-fixo {
+    top: 0;
+    left: 0;
+    width: 97.1%;
+    background-color: rgba(0, 44, 102, 0.726); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    text-align: left; /* Alinha a lista à esquerda */
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: disc;
+    color: #555;
+}
+li{
+    font-weight: bold;
+    font-size: large;
+}
+
+footer {
+    text-align: center;
+    padding: 10px ;
+    background-color: #ff0000;
+    color: white;
+    position: fixed;
+    width: 10%;
+    
+}
+
+.txt1,.txt2{
+    display: flex;
+    text-align: justify;
+    text-decoration: solid;
+    font-weight:bold;
+    font-size: large;
+}
+
+
+
+.container {
+    max-width:2000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaçamento entre os cards */
+    margin: 10px 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 270px; /* Largura fixa para os cards */
+    margin: 10px; /* Espaço entre os cards */
+    text-align: center; /* Alinha o texto à esquerda */
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.img{
+    width: 40px;
+}

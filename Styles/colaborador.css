@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header-fixo {
+    top: 0;
+    left: 0;
+    width: 98.5%;
+    background-color: rgba(0, 44, 102, 0.726); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cartões */
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Largura fixa para os cartões */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.card h2 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #777;
+}
+
+.card p {
+    color: #555;
+}
+
+.moldura {
+    display: flex;
+    justify-content: center;
+    width: 100px; /* Largura da moldura */
+    height: 100px; /* Altura da moldura */
+    border-radius: 50%; /* Moldura redonda */
+    overflow: hidden; /* Esconde partes da imagem que ultrapassam */
+    border: 3px solid rgba(0, 44, 102, 0.726); /* Borda */
+}
+
+.moldura img {
+    width: 100%; /* Faz a imagem ocupar toda a moldura */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}

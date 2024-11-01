@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-fixo {
+    position: fixed; /* Corrigido para manter o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Alterado para 100% */
+    background-color: rgba(0, 44, 102, 0.726);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 15px;
+    border-radius: 19px;
+}
+
+.nav-list a:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px; /* Para evitar que o conteúdo fique embaixo do cabeçalho */
+}
+
+.naveg1 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.main {
+    margin-top: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem */
+    margin-top: 0%;
+    gap: 20px; /* Espaço entre os cartões */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Largura fixa para os cartões */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+footer {
+    position:fixed; /* Corrigido para manter o rodapé fixo */
+    bottom: 0; /* Alinhado ao fundo */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 44, 102, 0.726);
+    color: white;
+}
+
+.img {
+    width: 40px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column; /* Muda a direção da lista de navegação para coluna em telas menores */
+    
+    }
+    .main{
+        margin-top: 0px;
+    }
+    .card {
+        width: 100%; /* Largura dos cartões em telas menores */
+        margin: 0 auto; /* Centraliza os cartões */
+    }
+
+    .header-fixo, footer {
+        padding: 15px; /* Reduz o padding em telas menores */
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list a {
+        padding: 10px; /* Reduz o padding dos links em telas muito pequenas */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+    .main{
+        margin-top: -10px;
+        
+    }
+    h1{
+        font-size: medium;
+       
+    }
+    .titulo1{
+        justify-content: center;
+        text-align: center;
+    }
+    .header-fixo, footer {
+        padding: 10px; /* Ajusta ainda mais o padding */
+        position: relative;
+    }
+}

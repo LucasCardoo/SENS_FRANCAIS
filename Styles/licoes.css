@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-fixo {
+    position: fixed; /* Manter o cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Alinhado a 100% */
+    background-color: rgba(0, 44, 102, 0.726);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 20px; /* Ajuste para evitar que o conteúdo fique embaixo do cabeçalho */
+    text-align: center;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.link-list {
+    margin: 120px 0;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #007BFF; /* Cor do link */
+    background-color: white; /* Fundo branco */
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas */
+    display: block; /* Faz o link ocupar toda a largura do item */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+a:hover {
+    background-color: #007BFF; /* Fundo azul ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+footer {
+    width: 100%;
+    position: fixed; /* Manter o rodapé fixo */
+    bottom: 0; /* Alinhado ao fundo */
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 44, 102, 0.726);
+    color: white;
+}
+
+.img {
+    width: 40px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 15px 15px; /* Ajusta o padding em telas menores */
+    }
+
+    header {
+        padding: 15px 0; /* Ajusta o padding do cabeçalho */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Tamanho da fonte reduzido */
+    }
+
+    a {
+        padding: 8px; /* Reduz o padding dos links */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Tamanho da fonte ainda menor */
+    }
+
+    a {
+        font-size: 12px; /* Tamanho da fonte dos links */
+    }
+
+    .link-list {
+        margin: 105px 0; /* Ajusta margens */
+    }
+
+}
